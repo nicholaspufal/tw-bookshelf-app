@@ -9,13 +9,15 @@ ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
+  text-align: center;
+  padding-right: 20px;
 }
 
 li.book {
-  float: left;
   position: relative;
   margin-left: 20px;
   padding: 0px;
+  display: inline-block;
 
   img {
     box-shadow: 0px 2px 13px #4a2205;
@@ -34,9 +36,13 @@ li.book {
   }
 }
 
+div#bookshelf_top, div#bookshelf_bottom, div#bookshelf {
+  max-width: 1020px;
+  min-width: 900px;
+}
+
 div#bookshelf_top, div#bookshelf_bottom {
   margin: 0px auto;
-  max-width: 880px;
   height: 25px;
 }
 
@@ -57,7 +63,6 @@ div#container {
 div#bookshelf {
   margin: 0px auto;
   padding-bottom: 30px;
-  max-width: 880px;
   background: #cda373 url('../img/bookshelf_background_wood.png') repeat left top;
 
   div.row {
@@ -86,26 +91,3 @@ div#bookshelf {
     }
   }
 }
-
-/* Responsive: Portrait tablets and up */
-//@media screen and (min-width: 768px) {
-//    .container {
-//        max-width: 730px;
-//    }
-//
-//    /* Remove the padding we set earlier */
-//    .header,
-//    .marketing,
-//    .footer {
-//        padding-left: 0;
-//        padding-right: 0;
-//    }
-//    /* Space out the masthead */
-//    .header {
-//        margin-bottom: 30px;
-//    }
-//    /* Remove the bottom border on the jumbotron for visual effect */
-//    .jumbotron {
-//        border-bottom: 0;
-//    }
-//}
