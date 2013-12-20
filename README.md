@@ -11,7 +11,8 @@ Optional requirements
 Yeoman, Bower
 
 Launch the project
--- Once you get the project in your environment, run the command in your terminal
+-- 
+Once you get the project in your environment, run the command in your terminal
 ```
 $ grunt serve
 ```
