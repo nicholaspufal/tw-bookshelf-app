@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $("li.book a").popover({ placement: "auto top", title: "Foobar", trigger: "hover" })
+  $("li.book").popover({ placement: "auto top", trigger: "hover", html: true })
 });
