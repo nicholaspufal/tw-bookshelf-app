@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'sass-bootstrap/lib/_variables';
 @import 'sass-bootstrap/lib/_mixins';
+@import 'sass-bootstrap/lib/_popovers';
 
 body {
   background: #453d32 url('../img/background.png') repeat center bottom;

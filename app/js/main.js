@@ -1,2 +1,3 @@
-/* globals console */
-console.log('\'Allo \'Allo!');
+$(document).ready(function() {
+  $("li.book a").popover({ placement: "auto top", title: "Foobar", trigger: "hover" })
+});
