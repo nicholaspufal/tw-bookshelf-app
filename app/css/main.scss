@@ -1,91 +1,111 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'sass-bootstrap/lib/_mixins';
 
-@import 'sass-bootstrap/lib/bootstrap';
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background: #453d32 url('../img/background.png') repeat center bottom;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
+li.book {
+  float: left;
+  position: relative;
+  margin-left: 20px;
+  padding: 0px;
+
+  img {
+    box-shadow: 0px 2px 13px #4a2205;
+    border: #090705 1px solid; 
+  }
+
+  span.highlight {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 75px;
+    background: transparent url("../img/book_cover_highlight.png") no-repeat;
+    z-index: 99999;
+  }
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+div#bookshelf_top, div#bookshelf_bottom {
+  margin: 0px auto;
+  max-width: 880px;
+  height: 25px;
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+div#bookshelf_top {
+  @include border-top-radius(10px);
+  @include gradient-vertical(#402200, #5a3100, 0%, 100%)
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+div#bookshelf_bottom {
+  @include border-bottom-radius(10px);
+  @include gradient-vertical(#5a3100, #412300, 0%, 100%)
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+div#container {
+  padding: 60px;
 }
 
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
+div#bookshelf {
+  margin: 0px auto;
+  padding-bottom: 30px;
+  max-width: 880px;
+  background: #cda373 url('../img/bookshelf_background_wood.png') repeat left top;
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
+  div.row {
+    position: relative;
+    width: 100%;
+    height: 162px;
+    padding-top: 25px;
+    background: url('../img/row_background.png') repeat-x center bottom;
 
-.marketing p + h4 {
-    margin-top: 28px;
+    span.right-corner, span.left-corner {
+      width: 40px;
+      height: 25px;
+      position: absolute;
+    }
+
+    span.right-corner {
+      right: -40px;
+      bottom: 0px;
+      background: url("../img/bookshelf_3dcorner_right.png") no-repeat;
+    }
+
+    span.left-corner {
+      left: -40px;
+      bottom: 0px;
+      background: url("../img/bookshelf_3dcorner_left.png") no-repeat;
+    }
+  }
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
+//@media screen and (min-width: 768px) {
+//    .container {
+//        max-width: 730px;
+//    }
+//
+//    /* Remove the padding we set earlier */
+//    .header,
+//    .marketing,
+//    .footer {
+//        padding-left: 0;
+//        padding-right: 0;
+//    }
+//    /* Space out the masthead */
+//    .header {
+//        margin-bottom: 30px;
+//    }
+//    /* Remove the bottom border on the jumbotron for visual effect */
+//    .jumbotron {
+//        border-bottom: 0;
+//    }
+//}
