@@ -1,14 +1,18 @@
-angular.module('twBookshelf',[]).
-  directive('twPopover', function() {
-    return {
-      link: function (scope, element, attributes) {
-        var options = {
-          placement: 'auto top',
-          trigger: 'hover',
-          html: true
-        }
+(function() {
+  'use strict';
 
-        $(element).popover(options);
-      }
-    };
-  });
+  angular.module('twBookshelf',[]).
+    directive('twPopover', function() {
+      return {
+        link: function (scope, element) {
+          var options = {
+            placement: 'auto top',
+            trigger: 'hover',
+            html: true
+          };
+
+          $(element).popover(options);
+        }
+      };
+    });
+})();

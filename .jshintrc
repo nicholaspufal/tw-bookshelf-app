@@ -15,9 +15,14 @@
   "noarg": true,
   "undef": true,
   "unused": true,
+  "globals": {
+    "$": false,
+    "jQuery": false
+  },
   "trailing": true,
   "predef": [
     "it",
+    "angular",
     "describe",
     "should",
     "beforeEach",
