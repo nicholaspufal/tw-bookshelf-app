@@ -1,24 +1,16 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="twBookshelf"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="twBookshelf"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="twBookshelf"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="twBookshelf"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>TW Bookshelf</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css css/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) css/main.css -->
         <link rel="stylesheet" href="css/main.css">
-        <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
-
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -115,13 +107,13 @@
                   <img src="img/cover_100x139.png">
                 </a>
               </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
+              <li class="book" tw-popover="" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
                 <a href="#">
                   <span class="highlight"></span>
                   <img src="img/cover_100x139.png">
                 </a>
               </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
+              <li class="book" tw-popover="" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
                 <a href="#">
                   <span class="highlight"></span>
                   <img src="img/cover_100x139.png">
@@ -134,20 +126,10 @@
         </div>
         <div id="bookshelf_bottom"></div>
       </div>
-
-        <!-- build:js js/vendor.js -->
-        <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-
-        <!-- build:js js/plugins.js -->
+        <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
         <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js js/main.js -->
         <script src="js/main.js"></script>
-        <!-- endbuild -->
     </body>
 </html>
