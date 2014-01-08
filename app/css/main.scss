@@ -81,6 +81,11 @@ div#bookshelf {
   margin: 0px auto;
   padding-bottom: 30px;
   background: #cda373 url('../img/bookshelf_background_wood.png') repeat left top;
+  
+  img {
+    width: 100px;
+    height: 139px;
+  }
 
   div.row {
     position: relative;
