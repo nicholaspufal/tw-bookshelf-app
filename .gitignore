@@ -14,3 +14,4 @@ results
 npm-debug.log
 *.*.swp
 .DS_Store
+.bower.json.swo
