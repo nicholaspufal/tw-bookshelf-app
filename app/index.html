@@ -19,117 +19,16 @@
 
       <div id="container">
         <div id="bookshelf_top"></div>
-        <div id="bookshelf">
-
-          <!-- sample row -->
-          <div class="row">
-            <span class="left-corner"></span>
-            <span class="right-corner"></span>
-            <ul class="books">
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- // sample row -->
-
-          <!-- sample row -->
-          <div class="row">
-            <span class="left-corner"></span>
-            <span class="right-corner"></span>
-            <ul class="books">
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/no_cover.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/no_cover.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" tw-popover="" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-              <li class="book" tw-popover="" data-title="The RSpec Book" data-content="Copies: 2<br/> Owner: Foolano <br/>Waiting list: Beltrano e Ciclano <br/> Comments: Lorem ipsum dolor eps dasame.">
-                <a href="#">
-                  <span class="highlight"></span>
-                  <img src="img/cover_100x139.png">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- // sample row -->
-
+        <div id="bookshelf" ng-view>
+          <!-- template should load here -->
         </div>
         <div id="bookshelf_bottom"></div>
       </div>
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <script src="js/main.js"></script>
+      <script src="bower_components/jquery/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+      <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+      <script src="js/main.js"></script>
     </body>
 </html>

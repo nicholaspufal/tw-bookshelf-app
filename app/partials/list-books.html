@@ -1,0 +1,12 @@
+<div class="row" ng-repeat="row in rows">
+  <span class="left-corner"></span>
+  <span class="right-corner"></span>
+  <ul class="books">
+    <li class="book" ng-repeat="book in row" tw-popover> 
+    <a href="#">
+      <span class="highlight"></span>
+      <img ng-src="{{ sanitizeBookCover(book.cover) }}">
+    </a>
+    </li>
+  </ul>
+</div>
