@@ -1,15 +1,18 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="twBookshelf"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="twBookshelf"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="twBookshelf"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" ng-app="twBookshelf"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="bookshelfApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="bookshelfApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="bookshelfApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="bookshelfApp"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>TW Bookshelf</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) css/main.css -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
@@ -24,11 +27,20 @@
         </div>
         <div id="bookshelf_bottom"></div>
       </div>
+      <!-- build:js js/vendor.js -->
+      <!-- bower:js -->
       <script src="bower_components/jquery/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/angular-route/angular-route.js"></script>
       <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
       <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-      <script src="js/main.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+      
+      <!-- build:js js/main.js -->
+      <script src="js/app.js"></script>
+      <script src="js/controllers.js"></script>
+      <script src="js/directives.js"></script>
+      <!-- endbuild -->
     </body>
 </html>
