@@ -14,7 +14,7 @@
   "immed": true,
   "noarg": true,
   "undef": true,
-  "unused": true,
+  "unused": false,
   "globals": {
     "$": false,
     "jQuery": false
