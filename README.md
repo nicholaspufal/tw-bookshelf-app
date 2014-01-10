@@ -2,7 +2,7 @@ ThoughtWorks Bookshelf
 ==
 App for the ThoughtWorks Bookshelf project.
 
-[![Build Status](https://travis-ci.org/nicholaspufal/tw-bookshelf-layout.png)](https://travis-ci.org/nicholaspufal/tw-bookshelf-layout)
+[![Build Status](https://travis-ci.org/nicholaspufal/tw-bookshelf-app.png)](https://travis-ci.org/nicholaspufal/tw-bookshelf-app)
 
 Requirements:
 --
