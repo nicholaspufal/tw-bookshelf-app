@@ -7,8 +7,10 @@
     '$http',
     '$routeParams',
     '$log',
-    function($scope, $http, $routeParams, $log) {
-      $scope.endPoint = 'http://twbookshelf-service.herokuapp.com/books/' +
+    '$location', 
+    function($scope, $http, $routeParams, $log, $location) {
+      $scope.endPoint = $location.protocol() + 
+                        '://twbookshelf-service.herokuapp.com/books/' +
                         $routeParams.officeName;
 
       $scope.splitInRows = function(books) {
